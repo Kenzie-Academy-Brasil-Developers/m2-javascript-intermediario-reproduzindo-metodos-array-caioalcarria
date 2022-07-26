@@ -88,7 +88,7 @@ function callbackReduce(acumulator, valorAtual) {
   return acumulator + valorAtual;
 }
 
-function reduce(array, callback, initialValue = 0) {
+function reduce(array, callback, initialValue = array[0]) {
   //sua lógica
   for (let i=0; i<array.length; i++){
     initialValue = callback(initialValue, array[i])
